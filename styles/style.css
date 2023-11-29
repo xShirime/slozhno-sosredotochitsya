@@ -14,7 +14,10 @@
   font-size: 18px;
   line-height: 23.4px;
   background-color: var(--page-background-color, #000028);
-  background-image: var(--page-background-image, url(../images/cover-image-dark.png));
+  background-image: var(
+    --page-background-image,
+    url(../images/cover-image-dark.png)
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,13 +129,17 @@
 
 .section__list-title {
   margin-bottom: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .article__title {
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 23.4px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .title-decor {
@@ -243,7 +250,6 @@ line-height: 23.4px;
 }
 
 @media (width >= 768px) {
-
   .decoration {
     inset-inline-end: 28px;
     inset-block-start: 20px;
@@ -334,5 +340,32 @@ line-height: 23.4px;
   .decoration {
     margin-top: 20px;
     margin-right: 5px;
+  }
+
+  .page__title {
+    font-size: 116px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82.5%;
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px 0px #ff0070;
+    font-family: IBM Plex Mono;
+    font-size: 116px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82.5%;
+  }
+}
+
+@media (width <= 375px) {
+  .decoration {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .cover {
+    padding: 10px;
   }
 }
