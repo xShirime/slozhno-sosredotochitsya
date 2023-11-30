@@ -351,7 +351,7 @@
 
   .footer__title {
     text-shadow: 2px 2px 0px #ff0070;
-    font-family: IBM Plex Mono;
+    font-family: var(--page-font-family, "IBM Plex mono", monospace);
     font-size: 116px;
     font-style: normal;
     font-weight: 700;
