@@ -138,13 +138,17 @@
 .article__title {
   font-size: 18px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 23.4px;
 }
 
 .title-decor {
   color: var(--highlight-color, #000028);
   background: var(--accent-color, #ff0070);
+}
+
+.title_bold_normal {
+  font-weight: normal;
 }
 
 .section {
